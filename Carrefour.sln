@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29020.237
@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carrefour.Infraestrutura", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carrefour.Aplicacao", "Carrefour.Aplicacao\Carrefour.Aplicacao.csproj", "{CA1A1C6B-1823-4495-93AE-3E84E2C08E82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrefour.TestesUnitarios", "Carrefour.TestesUnitarios\Carrefour.TestesUnitarios.csproj", "{FE03E780-6634-496C-ABBB-D3478590DC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Carrefour.TestesUnitarios", "Carrefour.TestesUnitarios\Carrefour.TestesUnitarios.csproj", "{FE03E780-6634-496C-ABBB-D3478590DC71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
