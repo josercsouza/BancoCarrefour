@@ -1,0 +1,13 @@
+<div class="po-wrapper">
+    <po-toolbar [p-title]="appTitle"></po-toolbar>
+
+    <po-menu
+        #mainMenu
+        [p-collapsed]="true"
+        p-logo="./assets/logo_branco.png"
+        p-short-logo="./assets/logo_quadrado.png"
+        [p-menus]="menuItems"
+    ></po-menu>
+
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,38 @@
+<po-page-list p-title="Lancamentos" [p-actions]="pageActions">
+    <div class="po-row">
+        <po-datepicker
+            p-label="Data Inicial"
+            class="po-xl-2 po-lg-2 po-md-2 po-sm-12"
+            [(ngModel)]="initial_date"
+            p-locale="pt"
+            p-clean="true"
+            p-format="dd/mm/yyyy"
+            (ngModelChange)="search()"
+            [p-max-date]="final_date"
+        >
+        </po-datepicker>
+        <po-datepicker
+            p-label="Data Final"
+            class="po-xl-2 po-lg-2 po-md-2 po-sm-12"
+            [(ngModel)]="final_date"
+            p-locale="pt"
+            p-clean="true"
+            p-format="dd/mm/yyyy"
+            (ngModelChange)="search()"
+            [p-min-date]="initial_date"
+        >
+        </po-datepicker>
+    </div>
+
+    <po-table
+        p-container
+        [p-striped]="true"
+        [p-columns]="columns"
+        [p-loading]="isLoading"
+        [p-items]="items"
+        [p-hide-columns-manager]="true"
+    >
+    </po-table>
+</po-page-list>
+
+<app-novo-lancamento (search)="search()"></app-novo-lancamento>

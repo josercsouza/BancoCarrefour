@@ -1,0 +1,27 @@
+<po-modal p-title="Novo Lancamento" [p-primary-action]="primaryAction" [p-secondary-action]="secondaryAction" p-size="auto">
+    <div class="po-row">
+        <po-datepicker
+            class="po-xl-6 po-lg-6 po-md-6 po-sm-12"
+            p-label="Data Lancamento"
+            [(ngModel)]="dataEfetiva"
+            p-locale="pt"
+            p-clean="true"
+            p-required
+            p-format="dd/mm/yyyy"
+        >
+        </po-datepicker>
+
+        <po-decimal
+            class="po-xl-6 po-lg-6 po-md-6 po-sm-12"
+            p-label="Valor Lancamento"
+            [(ngModel)]="valor"
+            [p-decimals-length]="2"
+            p-icon="po-icon-finance"
+            p-required
+            [p-thousand-maxlength]="13"
+        >
+        </po-decimal>
+    </div>
+</po-modal>
+
+<po-loading-overlay *ngIf="isProcessing" [p-screen-lock]="true" p-text="Processando..."> </po-loading-overlay>
